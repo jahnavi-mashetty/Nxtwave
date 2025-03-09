@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        function start(){
+            timer-value = document.getElementById("timer-value").value;
+            timer-value.value = setInterval(timer-value-00.01,1);
+        }
+        function stop(){
+        }
+        function reset(){
+            timer-value = document.getElementById("timer-value").value;
+            timer-value.value = 25:00
+        }
+        function short(){
+            
+            timer-value = document.getElementById("timer-value").value;
+            timer-value.value = timer-value - 5;
+        }
+        function long(){
+            timer-value = document.getElementById("timer-value").value;
+            timer-value.value = timer-value - 15;
+        }
+    </script>
+    <style>
+        .timer-container {
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    align-items: center;
+    padding: auto;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+}
+
+.timer {
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding: auto;
+}
+
+.start {
+    background-color: green;
+    color: white;
+    font-family: "Roboto";
+    border-radius: 2px;
+    border-width: 0px;
+    text-align: center;
+    padding: auto;
+}
+
+.stop{
+    background-color: red;
+    color: white;
+    font-family: "Roboto";
+    border-radius: 2px;
+    border-width: 0px;
+    text-align: center;
+    padding: auto;
+}
+
+.reset{
+    background-color: cadetblue;
+    color: white;
+    font-family: "Roboto";
+    border-radius: 2px;
+    border-width: 0px;
+    text-align: center;
+    padding: auto;
+}
+
+.short{
+    background-color: skyblue;
+    color: white;
+    font-family: "Roboto";
+    border-radius: 2px;
+    border-width: 0px;
+    text-align: center;
+    padding: auto;
+}
+
+.long{
+    background-color: blueviolet;
+    color: white;
+    font-family: "Roboto";
+    border-radius: 2px;
+    border-width: 0px;
+    text-align: center;
+    padding: auto;
+}
+    </style>
+    </head>
+    <body>
+        <div class="timer-container" >
+            <h1 class="heading">Pomodoro Timer</h1>
+             <p id="timer-value" class="timer">25:00</p>
+             <div class="buttons-container" >
+             <button class="start" onclick="start()" >START</button>
+             <button class="stop" onclick="stop()">STOP</button>
+             <button class="reset" onclick="reset()">RESET</button>
+             <button class="short" onclick="short()">SHORT BREAK</button>
+             <button class="long" onclick="long()">LONG BREAK</button>
+             </div>
+        </div>
+    </body>
+</html>
